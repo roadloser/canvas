@@ -1,0 +1,25 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-react-refactor",
+    "bradlc.vscode-tailwindcss",
+    "antfu.unocss",
+    "eamodio.gitlens",
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-markdown",
+    "yzhang.markdown-all-in-one",
+    "ms-vscode.vscode-eslint",
+    "ms-vscode.vscode-npm-scripts",
+    "christian-kohler.path-intellisense",
+    "christian-kohler.npm-intellisense",
+    "pkief.material-icon-theme",
+    "github.github-vscode-theme"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode.vscode-typescript",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}

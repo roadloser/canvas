@@ -1,0 +1,39 @@
+# Local
+.DS_Store
+*.local
+*.log*
+
+# Dist
+node_modules
+dist/
+
+# Profile
+.rspack-profile-*/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# AI Tools
+.cursor/
+.claude/
+.trae/
+.augment/
+.anthropic/
+.openai/
+*.ai
+*.gpt
+
+# Environment files
+env/.env.**
+!env/.env.example
+# Build artifacts
+build/
+
+# Cache
+.turbo/
+.cache/
+.parcel-cache/
+
+docs/

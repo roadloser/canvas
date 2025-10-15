@@ -1,0 +1,43 @@
+{
+  "name": "rsbuild-monorepo-demo",
+  "version": "1.0.0",
+  "description": "A modern frontend engineering template with Rsbuild, React, UnoCSS, and TypeScript",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.cjs",
+    "build": "pnpm build:prod",
+    "build:dev": "node scripts/build.cjs development",
+    "build:staging": "node scripts/build.cjs staging",
+    "build:prod": "node scripts/build.cjs production",
+    "build:analyze": "cross-env BUILD_ANALYZE=true pnpm build:prod && echo \"📊 Bundle analysis report generated at: client/dist/bundle-report.html\"",
+    "analyze": "pnpm build:analyze",
+    "analyze:open": "pnpm analyze && open-cli client/dist/bundle-report.html",
+    "preview": "pnpm -F rsbuild-monorepo-demo-client preview",
+    "type-check": "pnpm -F rsbuild-monorepo-demo-client type-check",
+    "clean": "node scripts/clean.cjs",
+    "lint": "npx @biomejs/biome check --no-errors-on-unmatched .",
+    "lint:fix": "npx @biomejs/biome check --write --no-errors-on-unmatched .",
+    "format": "npx @biomejs/biome format --write .",
+    "check": "pnpm run lint && pnpm run type-check",
+    "check:fix": "pnpm run lint:fix && pnpm run format && pnpm run type-check",
+    "ci:check": "pnpm run check && pnpm run build",
+    "prepare": "lefthook install"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.2",
+    "cross-env": "^10.0.0",
+    "dotenv": "^16.4.7",
+    "lefthook": "^1.12.2",
+    "lint-staged": "^16.1.2",
+    "open-cli": "^8.0.0",
+    "ultracite": "5.0.49"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,cjs,mjs,json,jsonc}": [
+      "npx @biomejs/biome check --write --no-errors-on-unmatched"
+    ]
+  },
+  "author": "Kid Wang <kid_cq@qq.com>",
+  "license": "MIT"
+}

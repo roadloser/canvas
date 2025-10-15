@@ -1,0 +1,13 @@
+@unocss preflights;
+@unocss default;
+
+/*
+Force UnoCSS to generate these classes:
+flex items-center justify-between bg-white text-gray-900 px-4 py-2
+border-gray-200 border-b mx-auto max-w-7xl h-16 space-x-4
+*/
+
+/* Custom styles */
+body {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
