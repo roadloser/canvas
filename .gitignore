@@ -37,3 +37,4 @@ build/
 .parcel-cache/
 
 docs/
+.vercel
