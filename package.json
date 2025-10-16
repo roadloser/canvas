@@ -22,7 +22,7 @@
     "check": "pnpm run lint && pnpm run type-check",
     "check:fix": "pnpm run lint:fix && pnpm run format && pnpm run type-check",
     "ci:check": "pnpm run check && pnpm run build",
-    "prepare": "lefthook install"
+    "prepare": "node -e \"try{require('lefthook').install()}catch(e){}\""
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
