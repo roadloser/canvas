@@ -1,8 +1,8 @@
 import type React from 'react';
-import AppRouter from '@/router';
+import { CanvasEditor } from '@/pages/CanvasEditor';
 
 const App: React.FC = () => {
-  return <AppRouter />;
+  return <CanvasEditor />;
 };
 
 export default App;
